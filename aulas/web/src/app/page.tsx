@@ -1,4 +1,6 @@
 import { User } from 'lucide-react'
+import Image from 'next/image'
+import nlwLogo from '../assets/nlw-spacetime-logo.svg'
 
 export default function Home() {
   return (
@@ -22,6 +24,32 @@ export default function Home() {
             memórias!
           </p>
         </a>
+
+        {/* HERO */}
+        <div className="space-y-5">
+          <Image src={nlwLogo} alt="nlw logo" />
+          <div className="max- w-[420px] space-y-4">
+            <h1 className="text-5xl font-bold leading-tight text-gray-50">
+              Your Time Capsule
+            </h1>
+            <p className="text-lg leading-relaxed">
+              Collect memorable moments from your journey and share (if you
+              like) with the world!
+            </p>
+          </div>
+
+          <a
+            className=" inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none  text-black transition-colors hover:bg-green-600"
+            href=""
+          >
+            REGISTER A REMINDER
+          </a>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-sm leading-relaxed text-gray-200">
+          Coded by past Patrick to future Patrick
+        </div>
       </div>
       {/* Right side */}
       <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover  p-16">
